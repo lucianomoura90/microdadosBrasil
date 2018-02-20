@@ -221,14 +221,11 @@ download_sourceData <- function(dataset, i, unzip=T , root_path = NULL, replace 
   }
   info.output<- data.frame(name = filename, link = link, sucess = sucess, size =  size, stringsAsFactors = F)
 
-  if (dataset="POF"){
-    arrumapof()
-  }
+
   return(info.output)
 
 }
 
-arrumapof <- function(){}
 
 #' Wrapper for unzipping lots of .rar and .7z files with archive::archive() .
 #'

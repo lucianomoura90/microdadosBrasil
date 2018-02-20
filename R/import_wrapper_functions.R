@@ -184,8 +184,6 @@ read_POF <- function(ft,i, root_path = NULL,file = NULL, vars_subset = NULL, nro
 
   data<- read_data(dataset= "POF", ft = ft,i = i, root_path = root_path,file = file, vars_subset = vars_subset, nrows = nrows, source_file_mark = source_file_mark)
   return(data)
-  data95 <- read_data(dataset= "POF", ft = ft, i = 1995, root_path = root_path,file = file, vars_subset = vars_subset, nrows = nrows, source_file_mark = source_file_mark)
-  return(rbind_all("BA4x,CE4x,DF4x,GO4x,MG4x,PA4x,PE4x,PR4x,RJ4x,RS4x,SP4x"))
 }
 
 #' @rdname read_dataset

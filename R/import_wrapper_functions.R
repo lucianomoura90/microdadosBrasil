@@ -182,7 +182,7 @@ read_PME <- function(ft,i, root_path = NULL,file = NULL, vars_subset = NULL, nro
 read_POF <- function(ft,i, root_path = NULL,file = NULL, vars_subset = NULL, nrows = -1L, source_file_mark = F){
 
 
-  data<- read_data(dataset= "POF", ft = ft,i = i, root_path = root_path,file = file, vars_subset = vars_subset, nrows = nrows, source_file_mark = source_file_mark)
+  data<- read_data(dataset= "POF", ft = "total",i = i, root_path = root_path,file = file, vars_subset = vars_subset, nrows = nrows, source_file_mark = source_file_mark)
   return(data)
 }
 

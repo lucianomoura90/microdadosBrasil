@@ -181,32 +181,35 @@ read_PME <- function(ft,i, root_path = NULL,file = NULL, vars_subset = NULL, nro
 #' @export
 read_POF <- function(ft,i, root_path = NULL,file = NULL, vars_subset = NULL, nrows = -1L, source_file_mark = F){
 
-  if(i==1995){
+
+
+  if(i %in% c(1987,1995,1997){
+
+    pof95 <-function(ft,i, root_path = NULL,file = NULL, vars_subset = NULL, nrows = -1L, source_file_mark = F){
     uf<-list.files(paste0(getwd(),"/Microdados/Dados/Dados"), pattern="x.*txt")
     tudo<-NULL
     for(i in uf){
       dados <- readLines(paste0(getwd(),"/Microdados/Dados/Dados/",i))
-      tudo<-c(tudo,dados)
+      tudo <-c(tudo,dados)
     }
     casas <- substr(dados,1,2)
-    out<- split( dados , f = casas )
+    out <- split( dados , f = casas )
     invisible(
       lapply(seq_along(out), function(i)
         write.table(out[[i]],paste0(getwd(),"/Microdados/Dados/Dados/",names(out)[[i]],".txt"),quote = FALSE,row.names = FALSE, col.names = FALSE)
       )
     )
 
-    data<- read_data(dataset= "POF", ft = ft,i = i, root_path = root_path,file = file, vars_subset = vars_subset, nrows = nrows, source_file_mark = source_file_mark)
-
     invisible(file.remove(paste0(getwd(),"/Microdados/Dados/Dados/",names(out),".txt")))
 
-
+  }
   }
   else{
-    data<- read_data(dataset= "POF", ft = ft,i = i, root_path = root_path,file = file, vars_subset = vars_subset, nrows = nrows, source_file_mark = source_file_mark)
+    data <- read_data(dataset= "POF", ft = ft,i = i, root_path = root_path,file = file, vars_subset = vars_subset, nrows = nrows, source_file_mark = source_file_mark)
   }
 
   return(data)
+
 }
 
 #' @rdname read_dataset

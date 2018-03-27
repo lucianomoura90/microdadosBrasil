@@ -9,7 +9,7 @@ int_pos;var_name;x;label;length;decimal_places;fin_pos;col_type;CHAR
 28;V1008;$2.;/* Número de seleção do domicílio */;2;0;29;c;TRUE
 30;V1014;$2.;/* Painel */;2;0;31;c;TRUE
 32;V1016;$1.;/* Número da entrevista no domicílio */;1;0;32;c;TRUE
-33;V1022;$1.;/* Tipo de situa��o da regi�o */;1;0;33;C;TRUE
+33;V1022;$1.;/* Tipo de situa��o da região */;1;0;33;c;TRUE
 34;V1023;$1.;/* Tipo de área */;1;0;34;c;TRUE
 35;V1027;15.;/* Peso SEM pós estratificação */;15;0;49;d;FALSE
 50;V1028;15.;/* Peso COM pós estratificação */;15;0;64;d;FALSE
@@ -175,9 +175,9 @@ int_pos;var_name;x;label;length;decimal_places;fin_pos;col_type;CHAR
 377;V4078;$1.;/* Motivo p/ñ querer/começar a trab. */;1;0;377;c;TRUE
 378;V4078A;$1.;/* Motivo p /ñ querer/começar a trab. */;1;0;378;c;TRUE
 379;V4082;$1.;/* Trab por pelo menos 1 hora em 1 ano*/;1;0;379;c;TRUE
-380;VD2002;$2.; /* Condi��o no domic�lio */;2;0;381;c;TRUE
+380;VD2002;$2.;/* Condição no domic�-lio */;2;0;381;c;TRUE
 382;VD2003;2.;/* Número de componentes do domic. */;2;0;383;i;FALSE
-384;VD2004;$1.;/* Esp�cie da unidade dom�stica*/;1;0;384;c;TRUE
+384;VD2004;$1.;/* Especie da unidade domestica*/;1;0;384;c;TRUE
 385;VD3001;$1.;/* Nível de instrução */;1;0;385;c;TRUE
 386;VD3002;$2.;/* Anos de estudo (5 anos ou mais de idade) */;2;0;387;c;TRUE
 388;VD4001;$1.;/* Condição em relação força d trab. */;1;0;388;c;TRUE
@@ -201,10 +201,10 @@ int_pos;var_name;x;label;length;decimal_places;fin_pos;col_type;CHAR
 430;VD4020;8.;/* Rendim. efetivo qq trabalho */;8;0;437;i;FALSE
 438;VD4023;$1.;/* Pq ñ proc./ñ gost./ñ disp.p/trab. */;1;0;438;c;TRUE
 439;VD4030;$1.;/* Pq ñ proc./ñ gost./ñ disp.p/trab. */;1;0;439;c;TRUE
-440;VD4031;3.;/* Hrs habituais em todos trab. */;3;0;442;i;FALSE
-443;VD4032;3.;/* Hrs efetivas no trab. princ. */;3;0;445;i;FALSE
-446;VD4033;3.;/* Hrs efetivas no trab. secun. */;3;0;448;i;FALSE
-449;VD4034;3.;/* Hrs efetivas no(s) outro(s) trab .*/;3;0;451;i;FALSE
-452;VD4035;3.;/* Hrs efetivas em todos trab. */;3;0;454;i;FALSE
+440;VD4031;3.;/* Hrs habituais em todos trab. */;3;0;442;c;TRUE
+443;VD4032;3.;/* Hrs efetivas no trab. princ. */;3;0;445;c;TRUE
+446;VD4033;3.;/* Hrs efetivas no trab. secun. */;3;0;448;c;TRUE
+449;VD4034;3.;/* Hrs efetivas no(s) outro(s) trab .*/;3;0;451;c;TRUE
+452;VD4035;3.;/* Hrs efetivas em todos trab. */;3;0;454;c;TRUE
 455;VD4036;$1.;/* Faixa hrs habituais trab. princ. */;1;0;455;c;TRUE
 456;VD4037;$1.;/* Faixa hrs efetivas trab. princ. */;1;0;456;c;TRUE

@@ -201,7 +201,7 @@ read_POF <- function(ft,i, root_path = NULL,file = NULL, vars_subset = NULL, nro
         write.table(out[[i]],paste0(getwd(),"/Microdados/Dados/Dados/",names(out)[[i]],".txt"),quote = FALSE,row.names = FALSE, col.names = FALSE)
       )
     )
-    data <- read_data(dataset= "POF", ft = ft,i = i, root_path = paste0(getwd(),"/Microdados/Dados/Dados/",pattern="x.txt"),file = file, vars_subset = vars_subset, nrows = nrows, source_file_mark = source_file_mark)
+    data <- read_data(dataset= "POF", ft = ft,i = i, root_path = root_path ,file = file, vars_subset = vars_subset, nrows = nrows, source_file_mark = source_file_mark)
 
 
 

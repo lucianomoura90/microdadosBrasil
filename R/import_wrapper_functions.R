@@ -190,8 +190,8 @@ read_POF <- function(ft,i, root_path = NULL,file = NULL, vars_subset = NULL, nro
     uf<-list.files(paste0(data_path), pattern="x.*txt")
 
     tudo<-NULL
-    for(i in uf){
-      dados <- readLines(paste0(data_path,i))
+    for(j in uf){
+      dados <- readLines(paste0(data_path,j))
       tudo <-c(tudo,dados)
     }
     casas <- substr(dados,1,2)

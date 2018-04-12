@@ -33,7 +33,7 @@ aux_read_fwf <- function(f,dic, nrows = -1L, na = "NA"){
 
   #print(f)
 
-  aux_read<- function(f, dic,nrows = -1L, na = "NA"){
+  aux_read<- function(f, dic,nrows = -1L, na = c("",".", "NA")){
 
     f %>% read_fwf(fwf_positions(start=dic$int_pos,end=dic$fin_pos,col_names=dic$var_name),
                    col_types=paste(dic$col_type,collapse =''),n_max = nrows, na = na) -> d
